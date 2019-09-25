@@ -1,0 +1,181 @@
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	animation-name: animBg;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* !reset */
+
+
+.hide {
+	display: none;
+}
+
+.start {
+	font-family: monospace;
+	text-align: center;
+	margin: 0;
+	font-size: 24px;
+	margin-bottom: 40px;
+	padding: 15px 0;
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	background-color: #222222;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	top: 0;
+}
+
+.points {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: #222;
+	padding: 15px 0;
+	z-index: 20;
+	font-size: 24px;
+	color: #aaff88;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+
+.car, .enemy {
+	width: 60px;
+	position: absolute;
+	left: 130px;
+	height: 120px;
+	bottom: 40px;
+	background: url('player.png') center/cover no-repeat
+}
+
+audio {
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+	outline: none;
+}
+
+.enemy {
+	
+}
+
+.gamePlace {
+	max-width: 320px;
+	height: 100vh;
+	position: relative;
+	margin: auto;
+	background-color: #332233;
+	overflow: hidden;
+}
+
+#container {
+	position: absolute;
+	width: 100px;
+	padding: 20px 0;
+	text-align: center;
+	right: 40px;
+	bottom: 40px;
+	z-index: 400;
+	background-color: #222222;
+	color: #ffffff;
+
+}
+
+h2 {
+	font-size: 42px;
+	font-family: monospace;
+}
+
+.buttons {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+}
+
+.line {
+	position: absolute;
+	width: 10px;
+	height: 40px;
+	background-color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+	audio {
+		display: none;
+	}
+}
+
+@keyframes animBg {
+	0%, 100% {
+		background-color: red;
+	}
+	20% {
+		background-color: #8af;
+	}
+	40% {
+		background-color: #af8;
+	}
+	60% {
+		background-color: purple
+	}
+}
